@@ -48,6 +48,7 @@ if button:
     rep=requests.get(url,params=params).json()
     st.markdown(f"### Predicted fare of ${round(rep['fare'],2)}")
     st.write(f'<style>{CSS}</style>', unsafe_allow_html=True)
+    st.markdown("![Alt Text](https://media1.giphy.com/media/14SAx6S02Io1ThOlOY/giphy.gif?cid=ecf05e47bqzrw6oixl94iiis8dlaor7pnduytptyuecy9ud1&rid=giphy.gif)")
 
 df = pd.DataFrame(
      [[pickup_lat,pickup_long],[dropoff_lat,dropoff_long]],
